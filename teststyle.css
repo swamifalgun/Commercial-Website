@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: segoeuil;
+}
+
+@font-face {
+    font-family: segoeuil;
+    src: url('segoeuil.TTF');
+}
+
+.nav {
+    position: relative;
+    top: 0;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    top: 0;
+    width: 360px;
+    margin: 0px auto;
+}
+
+li {
+    width: 110px;
+    height: 40px;
+    margin: 0px 4px;
+    float: left;
+    padding-top: 5px;
+    color: black;
+    text-align: center;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+nav>ul>li:hover>a {
+    border-bottom: 1px solid #08837E;
+    text-decoration: none;
+}
+
+.main {
+    position: absolute;
+    height: 540px;
+    top: 71px;
+    width: 100%;
+}
+
+#logot {
+    position: absolute;
+    top: 30px;
+    left: 25%;
+    width: 50%;
+    height: 20%;
+}
+
+#logo1 {
+    position: absolute;
+    top: 160px;
+    left: 35%;
+    width: 30%;
+    height: 60%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #08837E;
+    height: 50px;
+    width: 100%;
+}
+
+#social {
+    position: absolute;
+    padding: 10px;
+    10px;
+    10px;
+    10px;
+    left: 45%;
+}
+
+#insta {
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    border: 0px;
+    background: transparent;
+    opacity: 0.50;
+    transition: opacity 0.5s;
+}
+
+#insta:hover {
+    cursor: pointer;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+}
+
+#fb {
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    border: 0px;
+    background: transparent;
+    opacity: 0.50;
+    transition: opacity 0.5s;
+}
+
+#fb:hover {
+    cursor: pointer;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+}
+
+#twitter {
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    border: 0px;
+    background: transparent;
+    opacity: 0.50;
+    transition: opacity 0.5s;
+}
+
+#twitter:hover {
+    cursor: pointer;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+}
+
+@media (max-width: 480px) {
+    li {
+        display: block;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        background-color: #08837E;
+        margin-left: -40px;
+        float: right;
+    }
+    ul.nav {
+        display: none;
+    }
+    .nav-btn:before {}
+    .nav-btn {
+        display: block;
+        width: 100%;
+        background-color: #08837E;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+        float: right;
+    }
+    .nav.open {
+        display: block;
+        width: 100%;
+    }
+    /* menu button style*/
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    /* Rotate first bar */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    #logot {
+        display: none;
+    }
+    #logo1 {
+        width: 60%;
+        left: 23%;
+        top: 20%;
+    }
+    .footer {
+        height: 20%;
+    }
+    #social {
+        left: 40%;
+    }
+    .main {
+        top: 25%;
+        height: 60%;
+    }
+}

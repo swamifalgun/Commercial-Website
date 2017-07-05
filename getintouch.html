@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <script src="jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="contactstyle.css">
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <h2><strong>Get In Touch</strong></h2>
+
+    <div id="left">
+        <form method="post">
+
+            <div class="form-group">
+                <input type="name" class="form-control" id="lastName" placeholder="last name">
+                <input type="name" class="form-control" id="firstName" placeholder="first name">
+                <input type="email" class="form-control" id="email" placeholder="username@example.com">
+                <div class="radio">
+                    <label>
+                    <input type="radio" name="optionsRadios" id="hkvLocation" value="option1" checked>
+                        Hauz Khas Vllage, South Delhi
+                    </label><br>
+                    <label>
+                    <input type="radio" name="optionsRadios" id="noidaLocation" value="option2">
+                        Amity University, Noida
+                    </label><br>
+                    <label>
+                    <input type="radio" name="optionsRadios" id="janakLocation" value="option3" >
+                        Janakpuri, West Delhi 
+                   </label><br>
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <!-- Submit button -->
+                <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="map">
+
+
+
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZNfd1bQyNMv9Tv8eo5QfbvZDnF3qE6Yg&callback=initMap">
+    </script>
+</body>
+
+</html>

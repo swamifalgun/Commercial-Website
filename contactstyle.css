@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: segoeuil;
+    
+}
+
+@font-face {
+    font-family: segoeuil;
+    src: url('segoeuil.TTF');
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    
+}
+
+#left {
+    position: absolute;
+    width: 47%;
+    height: 50%;
+}
+
+#map {
+    position: relative;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+}
+@media (max-width: 480px){
+    #left{
+        position: relative;
+        left: 0;
+        width: 100%;    
+    }
+    #map{
+        position: relative;
+        top: 6%;
+        left: 0;
+        width: 100%;
+    }
+}
